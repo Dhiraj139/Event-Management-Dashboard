@@ -1,22 +1,109 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Event Management Dashboard
+
+A comprehensive Event Management Dashboard built with Next.js, TypeScript, and Material-UI. This application allows users to create, manage, and organize events with advanced filtering and search capabilities.
+
+## 📚 Documentation
+
+- **[Technical Documentation](./TECHNICAL_DOCS.md)** - Detailed technical documentation for developers
+
+## Features
+
+### 🔐 Authentication
+
+- Local authentication using localStorage
+- User registration and login
+- Session persistence across page reloads
+- Protected routes with automatic redirects
+
+### 📅 Event Management
+
+- **CRUD Operations**: Create, Read, Update, Delete events
+- **Event Types**: Support for Online and In-Person events
+- **Event Details**: Title, description, date/time, location/link, category, organizer
+- **Overlap Prevention**: Automatic validation to prevent conflicting event times
+- **Categories**: Predefined categories (Technology, Business, Education, etc.)
+
+### 🔍 Advanced Filtering & Search
+
+- **Search**: Real-time search by title and description
+- **Filters**: Event type, category, date range
+- **Sorting**: Sort by start date or title (ascending/descending)
+- **URL Persistence**: Filter and search parameters saved in URL query string
+
+### 🎨 User Interface
+
+- **Material-UI Components**: Modern, responsive design
+- **Responsive Layout**: Works on desktop, tablet, and mobile
+- **Interactive Cards**: Hover effects and intuitive controls
+- **Dark/Light Theme**: Professional color scheme
+- **Loading States**: Smooth user experience with loading indicators
+
+### 🏗️ Technical Features
+
+- **React Hook Form**: Robust form validation with Yup schema
+- **Context API**: Centralized state management for auth and events
+- **TypeScript**: Full type safety throughout the application
+- **Next.js App Router**: Modern routing with file-based structure
+
+## Tech Stack
+
+- **Framework**: Next.js 15 with App Router
+- **Language**: TypeScript
+- **UI Library**: Material-UI (MUI) v5
+- **Form Handling**: React Hook Form with Yup validation
+- **Date Handling**: date-fns
+- **State Management**: React Context API
+- **Storage**: localStorage for client-side persistence
+- **Styling**: Material-UI theme system with custom components
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18 or later
+- npm, yarn, pnpm, or bun
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone <repository-url>
+   cd event-management-dashboard
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   # or
+   bun install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   # or
+   bun dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Building for Production
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
+npm start
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
